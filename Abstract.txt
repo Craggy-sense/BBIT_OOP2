@@ -8,7 +8,7 @@ abstract class ElectricVehicle {
 class ElectricCar extends ElectricVehicle {
     @Override
     void batteryType() {
-        System.out.println("This electric car uses a lithium-ion battery.");
+        System.out.println("The car uses a lithium-ion battery.");
     }
 }
 
@@ -16,7 +16,7 @@ class ElectricCar extends ElectricVehicle {
 class ElectricBike extends ElectricVehicle {
     @Override
     void batteryType() {
-        System.out.println("This electric bike uses a nickel-metal hydride battery.");
+        System.out.println("The bike uses rechargable battery.");
     }
 }
 
