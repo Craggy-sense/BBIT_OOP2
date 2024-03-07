@@ -1,0 +1,44 @@
+﻿class Vehicle:
+    def __init__(self, vehicle_type, hourly_rate):
+        self.vehicle_type = vehicle_type
+        self.hourly_rate = hourly_rate
+
+
+class VehicleRentalService:
+    def __init__(self):
+        self.available_vehicles = {}
+
+
+    def add_vehicle(self, vehicle, quantity):
+        self.available_vehicles[vehicle.vehicle_type] = {'vehicle': vehicle, 'quantity': quantity}
+
+
+    def rent_vehicle(self, vehicle_type, rental_duration_hours, insurance_included=False):
+        if vehicle_type in self.available_vehicles:
+            vehicle_info = self.available_vehicles[vehicle_type]
+            if vehicle_info['quantity'] > 0:
+                rental_cost = vehicle_info['vehicle'].hourly_rate * rental_duration_hours
+                if insurance_included:
+                    rental_cost *= 1.1  # Assume 10% insurance surcharge
+                self.available_vehicles[vehicle_type]['quantity'] -= 1
+                return rental_cost
+            else:
+                return "Sorry, {} not available for rental".format(vehicle_type)
+        else:
+            return "Vehicle type {} not found".format(vehicle_type)
+
+
+
+
+car = Vehicle("car", 16)
+bike = Vehicle("bike", 8)
+
+
+rental_service = VehicleRentalService()
+rental_service.add_vehicle(car, 16)
+rental_service.add_vehicle(bike, 8)
+
+
+print(rental_service.rent_vehicle("car", 5, insurance_included=True))  # Rent a car for 5 hours with insurance
+print(rental_service.rent_vehicle("bike", 2))  # Rent a bike for 2 hours without insurance
+print(rental_service.rent_vehicle("scooter", 1))  # Try to rent a scooter, which is not available
