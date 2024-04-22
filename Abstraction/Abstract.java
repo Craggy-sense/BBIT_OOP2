@@ -1,4 +1,4 @@
-package BBIT_OOP2_ASSINO.Abstraction;
+package BBIT_OOP2.BBIT_OOP2_ASSINO.Abstraction;
 
 
 abstract class ElectricVehicle {

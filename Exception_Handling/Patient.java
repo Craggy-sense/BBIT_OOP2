@@ -1,4 +1,4 @@
-package BBIT_OOP2_ASSINO.Exception_Handling;
+package BBIT_OOP2.BBIT_OOP2_ASSINO.Exception_Handling;
 
 public class Patient {
     private String name;

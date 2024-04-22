@@ -1,4 +1,4 @@
-package BBIT_OOP2_ASSINO.Multiple_Interface;
+package BBIT_OOP2.BBIT_OOP2_ASSINO.Multiple_Interface;
 
 // Define the Amphibious interface
 interface Amphibious {

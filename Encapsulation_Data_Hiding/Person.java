@@ -1,4 +1,4 @@
-package BBIT_OOP2_ASSINO.Encapsulation_Data_Hiding;
+package BBIT_OOP2.BBIT_OOP2_ASSINO.Encapsulation_Data_Hiding;
 
 public class Person {
     private String name;

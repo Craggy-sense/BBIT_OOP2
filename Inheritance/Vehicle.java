@@ -1,4 +1,4 @@
-package BBIT_OOP2_ASSINO.Inheritance;
+package BBIT_OOP2.BBIT_OOP2_ASSINO.Inheritance;
 
 public class Vehicle {
     public String brand;
