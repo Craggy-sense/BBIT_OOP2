@@ -1,6 +1,6 @@
-// Abstract class ElectricVehicle
+// BBIT_OOP2_ASSINO.AbstractMethode class ElectricVehicle
 abstract class ElectricVehicle {
-    // Abstract method to be implemented by subclasses
+    // BBIT_OOP2_ASSINO.AbstractMethode method to be implemented by subclasses
     abstract void batteryType();
 }
 
