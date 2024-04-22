@@ -4,11 +4,11 @@ import BBIT_OOP2.CATII.Abstract.Person;
 
 import java.util.ArrayList;
 
-public class Faculty extends Person {
+public class faculty extends Person {
     private String department;
     private ArrayList<String> coursesTaught;
 
-    public Faculty(String name, int age, String ID, String department) {
+    public faculty(String name, int age, String ID, String department) {
         super(name, age, ID);
         this.department = department;
         this.coursesTaught = new ArrayList<>();

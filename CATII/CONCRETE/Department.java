@@ -7,7 +7,7 @@ import java.util.List;
 public class Department {
     private String departmentName;
     private List<Course> courses;
-    private List<Faculty> facultyMembers;
+    private List<faculty> facultyMembers;
 
     public Department(String departmentName) {
         this.departmentName = departmentName;
@@ -24,7 +24,7 @@ public class Department {
         return courses;
     }
 
-    public List<Faculty> getFacultyMembers() {
+    public List<faculty> getFacultyMembers() {
         return facultyMembers;
     }
 
@@ -37,11 +37,11 @@ public class Department {
         courses.remove(course);
     }
 
-    public void addFaculty(Faculty faculty) {
+    public void addFaculty(faculty faculty) {
         facultyMembers.add(faculty);
     }
 
-    public void removeFaculty(Faculty faculty) {
+    public void removeFaculty(faculty faculty) {
         facultyMembers.remove(faculty);
     }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 public class Course {
     private String courseName;
     private String courseCode;
-    private Faculty assignedFaculty;
+    private faculty assignedFaculty;
     private List<Student> enrolledStudents;
 
     public Course(String courseName, String courseCode) {
@@ -25,11 +25,11 @@ public class Course {
         return courseCode;
     }
 
-    public Faculty getAssignedFaculty() {
+    public faculty getAssignedFaculty() {
         return assignedFaculty;
     }
 
-    public void setAssignedFaculty(Faculty assignedFaculty) {
+    public void setAssignedFaculty(faculty assignedFaculty) {
         this.assignedFaculty = assignedFaculty;
     }
 

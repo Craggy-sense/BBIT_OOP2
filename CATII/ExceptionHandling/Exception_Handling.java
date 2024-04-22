@@ -2,7 +2,7 @@ package BBIT_OOP2.CATII.ExceptionHandling;
 
 import BBIT_OOP2.CATII.CONCRETE.Course;
 import BBIT_OOP2.CATII.CONCRETE.Department;
-import BBIT_OOP2.CATII.CONCRETE.Faculty;
+import BBIT_OOP2.CATII.CONCRETE.faculty;
 import BBIT_OOP2.CATII.CONCRETE.Student;
 import BBIT_OOP2.CATII.System_Functionality.Management;
 
@@ -12,7 +12,7 @@ public class Exception_Handling {
         Management universityManagement = new Management();
 
         Student student1 = new Student("John Doe", 20, "S001", 3.5);
-        Faculty faculty1 = new Faculty("Dr. Smith", 45, "F001", "Computer Science");
+        faculty faculty1 = new faculty("Dr. Smith", 45, "F001", "Computer Science");
 
         universityManagement.add(student1);
         universityManagement.add(faculty1);
